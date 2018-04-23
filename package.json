@@ -1,0 +1,22 @@
+{
+  "name": "dwaynedwards",
+  "version": "1.0.0",
+  "description": "Dwayne Edwards' Portfolio",
+  "author": "Dwayne Edwards",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglifycss": "^1.0.9"
+  },
+  "scripts": {
+    "watch": "gulp",
+    "build": "gulp build"
+  },
+  "license": "ISC"
+}

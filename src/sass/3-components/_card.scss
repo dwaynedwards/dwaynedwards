@@ -1,0 +1,71 @@
+.card {
+  background-color: $white;
+  border-radius: 1rem;
+  margin: 20rem 0 10rem 0;
+  @include x-center;
+  box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+  width: 90vw;
+  @include responsive(md) {
+    margin: 25rem 0 10rem 0;
+  }
+  @include responsive(xl) {
+    width: 70vw;
+    margin: 30rem 0 10rem 0;
+  }
+  @include responsive(xxl) {
+    width: 50vw;
+    margin: 50rem 0 10rem 0;
+  }
+
+  &__header {
+    background-color: $white;
+    top: -10rem;
+    width: 16rem;
+    height: 16rem;
+    @include x-center;
+    border: $white 10px solid;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba($black, 0.15);
+    @include responsive(xxl) {
+      top: -12rem;
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  &__image {
+    @include responsive(xxl) {
+      width: 18rem;
+      height: 18rem;
+    }
+    background-image: linear-gradient(to right, $primary, $secondary);
+    clip-path: circle(50% at 50% 50%);
+  }
+
+  &__about {
+    padding: 1rem;
+    padding-top: 10rem;
+    text-align: center;
+  }
+
+  &__skills {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  &__learning {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  &__social {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  &__footer {
+    padding: 1rem;
+    text-align: center;
+  }
+}

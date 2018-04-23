@@ -1,0 +1,46 @@
+.skills {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  @include responsive(md) {
+    padding: 0 6rem;
+  }
+  @include responsive(lg) {
+    padding: 0 15rem;
+  }
+  @include responsive(xl) {
+    padding: 0 25rem;
+  }
+  &:not(:last-child) {
+    padding-bottom: 1rem;
+  }
+  &__item {
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem;
+    & svg {
+      width: 6rem;
+      height: 6rem;
+    }
+    @include responsive(md) {
+      width: 7rem;
+      height: 7rem;
+      margin: 2rem;
+      & svg {
+        width: 7rem;
+        height: 7rem;
+      }
+    }
+    @include responsive(xxl) {
+      width: 10rem;
+      height: 10rem;
+      margin: 2rem;
+      & svg {
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+  }
+}

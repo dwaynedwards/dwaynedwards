@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto Mono', monospace;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    45deg,
+    rgba($secondary, 0.8),
+    rgba($primary, 0.8)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @include responsive(md) {
+    background: linear-gradient(
+        45deg,
+        rgba($secondary, 0.8),
+        rgba($primary, 0.8)
+      ),
+      url(../img/bg-1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  @include responsive(xl) {
+    background: linear-gradient(
+        45deg,
+        rgba($secondary, 0.8),
+        rgba($primary, 0.8)
+      ),
+      url(../img/bg-2x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+}

@@ -1,0 +1,80 @@
+.heading {
+  &__name {
+    display: block;
+    color: $black;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    @include responsive(md) {
+      font-size: 5rem;
+      letter-spacing: 0.75rem;
+    }
+    @include responsive(xl) {
+      font-size: 5.5rem;
+      letter-spacing: 1.25rem;
+    }
+    @include responsive(xxl) {
+      font-size: 6rem;
+      letter-spacing: 1.75rem;
+    }
+  }
+
+  &__title {
+    display: block;
+    color: $black;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    padding-bottom: 3rem;
+    @include responsive(md) {
+      font-size: 3rem;
+      letter-spacing: 0.75rem;
+    }
+    @include responsive(xl) {
+      font-size: 3.5rem;
+      letter-spacing: 1.5rem;
+    }
+    @include responsive(xxl) {
+      font-size: 4rem;
+      letter-spacing: 1.75rem;
+    }
+  }
+
+  &__header {
+    display: block;
+    color: $black;
+    font-size: 2.5rem;
+    letter-spacing: 0.25rem;
+    padding-bottom: 3rem;
+    @include responsive(md) {
+      font-size: 3rem;
+      letter-spacing: 0.75rem;
+    }
+    @include responsive(xl) {
+      font-size: 3.5rem;
+      letter-spacing: 1.25rem;
+    }
+    @include responsive(xxl) {
+      font-size: 4rem;
+      letter-spacing: 1.75rem;
+    }
+  }
+
+  &__footer {
+    display: block;
+    color: $black;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    @include responsive(md) {
+      font-size: 2.5rem;
+      letter-spacing: 0.25rem;
+      padding: 3rem;
+    }
+    @include responsive(xl) {
+      font-size: 3rem;
+      letter-spacing: 0.75rem;
+    }
+  }
+}
